@@ -13,5 +13,3 @@ export const StatsText = styled.p`
 export const Box = styled.div`
   display: ${props => (props.visible ? 'block' : 'none')};
 `;
-
-s;
