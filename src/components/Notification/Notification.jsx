@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import { NotyText } from './Notification.styled';
 
 export class Noticifaciton extends Component {
   render() {
-    return <p> There is no feedback</p>;
+    return <NotyText> There is no feedback</NotyText>;
   }
 }
