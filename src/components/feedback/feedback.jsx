@@ -5,14 +5,18 @@ import { Fragment } from 'react';
 
 export class Feedback extends Component {
   render() {
-    const { test } = this.props;
+    const { handler } = this.props;
     return (
       <>
         <Title>Please leave feedback</Title>
-        <Btn onClick={test}>good</Btn>
-        <Btn onClick={test}>neutral</Btn>
-        <Btn onClick={test}>bad</Btn>
+        <Btn onClick={handler}>good</Btn>
+        <Btn onClick={handler}>neutral</Btn>
+        <Btn onClick={handler}>bad</Btn>
       </>
     );
   }
 }
+
+Feedback.propTypes = {
+  handler: PropTypes.func.isRequired,
+};

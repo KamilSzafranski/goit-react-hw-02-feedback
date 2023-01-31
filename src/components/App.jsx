@@ -7,11 +7,10 @@ export class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    visible: false,
   };
 
   updateState = value => {
-    return { [value]: this.state[value] + 1, visible: true };
+    return { [value]: this.state[value] + 1 };
   };
 
   btnEvent = event => {
@@ -23,9 +22,8 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Feedback test={this.btnEvent} />
+        <Feedback handler={this.btnEvent} />
         <Statistics
-          visible={this.state.visible}
           good={this.state.good}
           bad={this.state.bad}
           neutral={this.state.neutral}

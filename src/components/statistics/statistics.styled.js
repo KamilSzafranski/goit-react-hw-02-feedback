@@ -9,7 +9,3 @@ export const StatsText = styled.p`
   fonst-size: 14px;
   color: black;
 `;
-
-export const Box = styled.div`
-  display: ${props => (props.visible ? 'block' : 'none')};
-`;
