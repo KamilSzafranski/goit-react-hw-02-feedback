@@ -13,9 +13,9 @@ export class Statistics extends Component {
 
     return (
       <div>
-        {total === 0 && <Noticifaciton />}
-
-        {total !== 0 && (
+        {total === 0 ? (
+          <Noticifaciton />
+        ) : (
           <>
             <HeaderStatistics>Statistics</HeaderStatistics>
             <StatsText>{`Good:${good}`}:</StatsText>
